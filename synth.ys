@@ -1,0 +1,6 @@
+read_verilog -sv everything.sv
+hierarchy -check -top everything
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+# This generates a schematic view
+show -format dot -prefix ./multiplier_schematic

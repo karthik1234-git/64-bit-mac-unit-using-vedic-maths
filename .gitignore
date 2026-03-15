@@ -1,0 +1,15 @@
+# Ignore Verilator build folder
+obj_dir/
+
+# Ignore Waveform files (we generate these locally)
+*.vcd
+*.vdb
+*.evcd
+
+# Ignore Yosys outputs
+multiplier_schematic.*
+*.dot
+
+# Ignore Windows system files
+Thumbs.db
+.DS_Store
