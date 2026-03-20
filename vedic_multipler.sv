@@ -1,4 +1,5 @@
-// 2x2 Vedic Multiplier (The Base Lego Brick)
+/*verilator lint_off WIDTHEXPAND*/
+
 module vedic_2x2 (
     input  logic [1:0] a,
     input  logic [1:0] b,

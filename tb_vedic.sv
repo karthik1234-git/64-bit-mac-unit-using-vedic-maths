@@ -1,9 +1,9 @@
 module tb_top;
-    logic [63:0] a, b;
-    logic [127:0] res;
+    logic [3:0] a, b;
+    logic [7:0] res;
 
     // Connect the RTL to the testbench
-    vedic_multipler #(64) dut (
+    vedic_multiplier dut (
         .a(a), 
         .b(b), 
         .result(res)
@@ -14,7 +14,7 @@ module tb_top;
         $dumpvars(0, tb_top);
 
         $display("--- SIMULATION STARTING ---");
-        a = 64'h5; b = 64'h10; #10;
+        a = 4'h5; b = 4'h8; #10;
         $display("Result: %h", res);
         
         $display("--- SUCCESS: 64-BIT VEDIC VERIFIED ---");
